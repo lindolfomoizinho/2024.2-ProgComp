@@ -8,9 +8,15 @@ n = int(input("Dígite um número inteiro maior que 0: "))
 
 if n <= 0:
     sys.exc_info("O número digitado é inválido")
+else:
+    count = 0  
+    num = 2 
 
-for atual in range(1, n + 1):
-    for numero in range(atual, atual + 1):
-        if atual % numero != 0:
-            print(numero)
-            break
+    while count < n:
+        for i in range(2, num):
+            if num % i == 0:
+                break
+        else:
+            print(num, end=" ")
+            count += 1
+        num += 1
