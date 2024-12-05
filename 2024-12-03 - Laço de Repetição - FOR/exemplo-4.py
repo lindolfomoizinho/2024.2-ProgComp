@@ -7,7 +7,7 @@ import sys
 n = int(input("Dígite um número inteiro maior que 0: "))
 
 if n <= 0:
-    sys.exc_info("O número digitado é inválido")
+    sys.exit("O número digitado é inválido")
 else:
     count = 0  
     num = 2 
