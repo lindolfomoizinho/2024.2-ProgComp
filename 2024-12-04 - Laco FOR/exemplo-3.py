@@ -10,5 +10,3 @@ num = int(input("Digite um número inteiro positivo: "))
 if num <= 0:
     sys.exit("Número inválido")
 else:
-    
-        

@@ -17,7 +17,7 @@ else:
             c = b
             while c <= 100:
                 if a**2 + b**2 == c**2:
-                    print(f"A = {a}, B={b} e C={c}")
+                    print(f"A = {a}, B= {b} e C= {c}")
                     count += 1
                     if count == num : break
                 c += 1
