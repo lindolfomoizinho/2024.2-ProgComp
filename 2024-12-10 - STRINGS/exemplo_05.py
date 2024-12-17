@@ -1,12 +1,17 @@
 '''
    EXEMPLO 05:
-   Fazer um programa em que o usuário informe uma string e depois uma palavra
+   Fazer um programa em que o usuário informe uma frase e depois uma palavra
    e em seguida o programa informe se a palavra informada está na string informada
 '''
 
-frase = input("Digite uma frase: ")
+# Solicita ao usuário que informe uma frase
+frase = input('Informe uma frase: ')
 
-palavra = input("Digite uma palavra: ")
+# Solicita ao usuário que informe uma palavra
+palavra = input('Informe uma palavra: ')
 
-if palavra in frase: print(f"A string {palavra} está na frase: {frase}")
-else : print(f"A string {palavra} não está na frase: {frase}")
+# Verifica se a palavra está na string
+if palavra in frase:
+   print('A palavra está na string.')
+else:
+   print('A palavra não está na string.')

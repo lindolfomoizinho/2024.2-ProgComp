@@ -4,16 +4,20 @@
    o programa informe quantas palavras existem na string digitada
 '''
 
-frase = input("Informe uma frase: ")
+# Solicita ao usuário que informe uma string
+frase = input('Informe uma string: ')
 
-posicao = 0
-palavras = 0
+# Percorre cada caractere da frase digitada
+intPosicao    = 0
+intQtPalavras = 0
+while intPosicao < len(frase):
+   # Verifica se o caractere atual é um espaço em branco
+   if frase[intPosicao] == ' ' and frase[intPosicao - 1] != ' ':  
+      intQtPalavras += 1
+   intPosicao += 1 
 
-while posicao < len(frase):
-   if frase[posicao] == " " and frase[posicao - 1] != " ":
-      palavras += 1
-   posicao += 1  
-   
-if frase[-1] != " ": palavras += 1
+# verifica se a última palavra da frase não foi contabilizada
+if frase[-1] != ' ': intQtPalavras += 1
 
-print(f"A quantidade de palavras é {palavras}")
+# Exibe a quantidade de palavras na frase digitada
+print(f'Quantidade de palavras na frase: {intQtPalavras}')
